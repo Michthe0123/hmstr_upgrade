@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamster Kombat Upgrade Profit Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hamster Kombat Upgrade Profit Calculator</h1>
+
+        <label for="upgradeCost">Upgrade Cost:</label>
+        <input type="number" id="upgradeCost" placeholder="Enter value">
+        <div class="radio-group">
+            <input type="radio" id="upgradeMillions" name="upgradeUnit" value="millions">
+            <label for="upgradeMillions">Millions</label>
+            <input type="radio" id="upgradeThousands" name="upgradeUnit" value="thousands">
+            <label for="upgradeThousands">Thousands</label>
+        </div>
+
+        <label for="currentProduction">Current Production per Hour:</label>
+        <input type="number" id="currentProduction" placeholder="Enter value">
+        <div class="radio-group">
+            <input type="radio" id="productionMillions" name="productionUnit" value="millions">
+            <label for="productionMillions">Millions</label>
+            <input type="radio" id="productionThousands" name="productionUnit" value="thousands">
+            <label for="productionThousands">Thousands</label>
+        </div>
+
+        <label for="increase">Increase in Production (Thousands):</label>
+        <input type="number" id="increase" placeholder="Enter value">
+
+        <button id="calculateBtn" onclick="calculateProfit()">Calculate</button>
+        <button id="resetBtn" onclick="resetCalculator()">Reset</button>
+
+        <div id="output">
+            <h2>Results</h2>
+            <p id="currentProfit">Current Profit per Hour: </p>
+            <p id="totalIncrease">Total Increase after Upgrade: </p>
+            <p id="profitableHours">Becomes Profitable after: </p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
